@@ -19,11 +19,10 @@
       Chrome Browser
     </title>
     <link href="https://plus.google.com/100585555255542998765" rel="publisher">
-    <link href="//www.google.com/images/icons/product/chrome-32.png" rel="icon" type="image/ico">
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel=
+    <link href="www.google.com/images/icons/product/chrome-32.png" rel="icon" type="image/ico">
+    <link href="fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=latin" rel=
     "stylesheet" nonce="51ZN_MR9MfDje0dZzLfWlg">
-    <link href="/intl/en/chrome/assets/common/css/chrome.min.css" rel="stylesheet" nonce="51ZN_MR9MfDje0dZzLfWlg">
-    <script src="//www.google.com/js/gweb/analytics/autotrack.js" nonce="51ZN_MR9MfDje0dZzLfWlg">
+    <link href="https://www.google.com/intl/en/chrome/assets/common/css/chrome.min.css" rel="stylesheet" nonce="51ZN_MR9MfDje0dZzLfWlg">
 </script>
     <script nonce="51ZN_MR9MfDje0dZzLfWlg">
 new gweb.analytics.AutoTrack({
@@ -131,7 +130,7 @@ a.c1 {font-weight: normal;}
         </div>
         <div id="div_start">
           <button id="start_button" onclick="startButton(event)"><img alt="Start" id="start_img"
-          src="/intl/en/chrome/assets/common/images/content/mic.gif"></button>
+          src="https://www.google.com/intl/en/chrome/assets/common/images/content/mic.gif"></button>
         </div>
         <div id="results">
           <span class="final" id="final_span"></span> <span class="interim" id=
@@ -163,7 +162,7 @@ a.c1 {font-weight: normal;}
             </select>
         </div>
       </div>
-    </div><script src="/intl/en/chrome/assets/common/js/chrome.min.js" nonce="51ZN_MR9MfDje0dZzLfWlg">
+    </div><script src="https://www.google.com/intl/en/chrome/assets/common/js/chrome.min.js" nonce="51ZN_MR9MfDje0dZzLfWlg">
 </script> <script nonce="51ZN_MR9MfDje0dZzLfWlg">
 var chrmMenuBar = new chrm.ui.MenuBar();
       chrmMenuBar.decorate('nav');
@@ -301,9 +300,9 @@ for (var i = 0; i < langs.length; i++) {
   select_language.options[i] = new Option(langs[i][0], i);
 }
 // Set default language / dialect.
-select_language.selectedIndex = 10;
+select_language.selectedIndex = 55;
 updateCountry();
-select_dialect.selectedIndex = 11;
+select_dialect.selectedIndex = 0;
 showInfo('info_start');
 
 function updateCountry() {
@@ -333,17 +332,17 @@ if (!('webkitSpeechRecognition' in window)) {
   recognition.onstart = function() {
     recognizing = true;
     showInfo('info_speak_now');
-    start_img.src = '/intl/en/chrome/assets/common/images/content/mic-animate.gif';
+    start_img.src = 'https://www.google.com/intl/en/chrome/assets/common/images/content/mic-animate.gif';
   };
 
   recognition.onerror = function(event) {
     if (event.error == 'no-speech') {
-      start_img.src = '/intl/en/chrome/assets/common/images/content/mic.gif';
+      start_img.src = 'https://www.google.com/intl/en/chrome/assets/common/images/content/mic.gif';
       showInfo('info_no_speech');
       ignore_onend = true;
     }
     if (event.error == 'audio-capture') {
-      start_img.src = '/intl/en/chrome/assets/common/images/content/mic.gif';
+      start_img.src = 'https://www.google.com/intl/en/chrome/assets/common/images/content/mic.gif';
       showInfo('info_no_microphone');
       ignore_onend = true;
     }
@@ -362,7 +361,7 @@ if (!('webkitSpeechRecognition' in window)) {
     if (ignore_onend) {
       return;
     }
-    start_img.src = '/intl/en/chrome/assets/common/images/content/mic.gif';
+    start_img.src = 'https://www.google.com/intl/en/chrome/assets/common/images/content/mic.gif';
     if (!final_transcript) {
       showInfo('info_start');
       return;
@@ -464,7 +463,7 @@ function startButton(event) {
   ignore_onend = false;
   final_span.innerHTML = '';
   interim_span.innerHTML = '';
-  start_img.src = '/intl/en/chrome/assets/common/images/content/mic-slash.gif';
+  start_img.src = 'https://www.google.com/intl/en/chrome/assets/common/images/content/mic-slash.gif';
   showInfo('info_allow');
   showButtons('none');
   start_timestamp = event.timeStamp;
